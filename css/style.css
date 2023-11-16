@@ -1,0 +1,61 @@
+.abt-icon{
+    width: 60px;
+    height: 60px;
+    border: 2px solid #bfdb99;
+}
+.abt-icon i{
+    color: #8fc04e;
+}
+.abt-r-row:hover .abt-icon{
+    background-color: #8fc04e;
+    border-color: #8fc04e;
+    transition: all 0.5s ease;
+}
+.abt-r-row:hover .abt-i{
+    color: #fff;
+    transition: all 0.5s ease;
+}
+.abt-card span{
+    background-color: #f9f9f9;
+    color: #8fc04e;
+}
+.abt-image{
+    position: relative;
+}
+
+.abt-l-icon{
+    background-color: #8fc04e;
+    width: 60px;
+    height: 60px;
+    outline: 10px solid #8fc04e74;
+    position: absolute;
+    bottom: 40%;
+    left:45%;
+}
+.abt-l-icon:hover{
+    outline-color: #8fc04e;
+}
+.abt-l-icon:hover .play-border{
+    animation: none;
+}
+.play-border{
+    width: 60px;
+    height: 60px;
+    border: 2px solid #8fc04e;
+    animation: play 1s ease infinite;
+}
+@keyframes play{
+    0%{
+        /* border:2px solid #8fc04e; */
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(0.7);
+        /* border:2px solid #8fc04e; */
+    }
+    100%{
+        transform: scale(1.3);
+        /* border:2px solid #8fc04e; */
+        opacity: 50%;
+    }
+}
